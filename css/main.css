@@ -1,4 +1,25 @@
 /* line 1, ../scss/main.scss */
-body {
-  background: green;
+html {
+  background: url("../img/background.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 10, ../scss/main.scss */
+video {
+  width: 100%;
+  height: 400px;
+}
+
+/* line 21, ../scss/main.scss */
+.wrapper {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+/* line 27, ../scss/main.scss */
+.wrapper .mejs-treehouse {
+  margin-top: 20px;
 }

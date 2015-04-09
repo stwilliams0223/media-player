@@ -5,6 +5,7 @@
 
 .mejs-treehouse .mejs-controls .mejs-button button {
   outline: none;
+  color:red;
 }
 
 .mejs-treehouse .mejs-controls .mejs-captions-button {
@@ -22,8 +23,8 @@
 }
 
 .mejs-treehouse .mejs-controls .mejs-time-rail span {
-  height: 100%;
-  border-radius: 0px;
+  height: 82%;
+  border-radius: 0;
 }
 
 

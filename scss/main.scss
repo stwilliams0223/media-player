@@ -1,4 +1,41 @@
-body{
-background: green;
+html{
+background: url('../img/background.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+video{
+
+width: 100%;
+height: 400px;
+
+}
+
+audio{
+
+
+}
+.wrapper{
+
+	width: 50%;
+    margin: 0 auto;
+    margin-top: 5%;
+
+	.mejs-treehouse{
+
+		margin-top: 20px;
+
+		.mejs-treehouse{
+
+
+		}
+
+
+	}
+
+
 
 }
