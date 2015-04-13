@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Video and Audio</title>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/mediaelement-and-player.min.js"></script>
+
+
+    <link rel="stylesheet" href="js/mediaelementplayer.min.css" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    
+    <div class="wrapper">
+      
+    <!--   <nav>
+        <ul>
+          <li><a href="#" id="video-filter">Video</a></li>
+          <li><a href="#" id="audio-filter">Audio</a></li>
+        </ul>
+      </nav> -->
+
+      <!-- Video -->
+      <video class="mejs-scott" width="850" height="600" controls>
+        <source src="https://dl-web.dropbox.com/get/_cdn/Two-Dancing-Dogs.mp4?_subject_uid=288210045&w=AAAAOyIZ1QRrisC6OBDYHf8P541uAO-bwmNc7_obeLbQcA" type="video/mp4">
+        <track label="English" kind="subtitles" srclang="en" src="captions.vtt" default>
+      </video>
+
+      <!-- <video class="mejs-scott" width="852" height="480" controls>
+        <source src="media/2.mp4" type="video/mp4">
+        <track label="English" kind="subtitles" srclang="en" src="captions.vtt" default>
+      </video> -->
+      
+      <!-- Audio -->
+    <!--   <audio class="mejs-scott" controls>
+        <source src="media/1.mp3" type="audio/mp3">
+      </audio>
+      <audio class="mejs-scott" controls>
+        <source src="media/2.mp3" type="audio/mp3">
+      </audio> -->
+      
+    </div>
+    
+
+        <script src="js/scripts.js"></script>
+  </body>
+</html>
+
+
+

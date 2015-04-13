@@ -1,25 +1,205 @@
-/* line 1, ../scss/main.scss */
+/*Global*/
+/* line 2, ../scss/main.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 8, ../scss/main.scss */
 html {
-  background: url("../img/background.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: white no-repeat center center fixed;
 }
 
-/* line 10, ../scss/main.scss */
+/* line 14, ../scss/main.scss */
 video {
-  width: 100%;
-  height: 400px;
+  border-radius: 10px;
 }
 
-/* line 21, ../scss/main.scss */
+/* line 24, ../scss/main.scss */
 .wrapper {
   width: 50%;
   margin: 0 auto;
   margin-top: 5%;
 }
-/* line 27, ../scss/main.scss */
+/* line 30, ../scss/main.scss */
 .wrapper .mejs-treehouse {
   margin-top: 20px;
+}
+
+/* line 44, ../scss/main.scss */
+.mejs-scott .mejs-controls {
+  background: rgba(56, 64, 71, 0.98);
+  height: 30px;
+}
+/* line 51, ../scss/main.scss */
+.mejs-scott .mejs-controls .mejs-time-rail span {
+  height: 100%;
+  border-radius: 0px;
+}
+/* line 58, ../scss/main.scss */
+.mejs-scott .mejs-controls .mejs-time-rail {
+  padding: 0;
+}
+/* line 62, ../scss/main.scss */
+.mejs-scott .mejs-controls .mejs-time-rail .mejs-time-total, .mejs-scott .mejs-controls .mejs-time-rail .mejs-time-loaded, .mejs-scott .mejs-controls .mejs-time-rail .mejs-time-buffering, .mejs-scott .mejs-controls .mejs-time-rail .mejs-time-handle {
+  background: #2d3339;
+  margin-top: 8px;
+  height: 50%;
+  border-radius: 0;
+}
+/* line 72, ../scss/main.scss */
+.mejs-scott .mejs-controls .mejs-time-rail .mejs-time-current {
+  background: #ff9900;
+}
+/* line 79, ../scss/main.scss */
+.mejs-scott .mejs-controls .mejs-captions-selector {
+  background: rgba(56, 64, 71, 0.98);
+  width: 100px;
+  right: auto;
+}
+/* line 87, ../scss/main.scss */
+.mejs-scott .mejs-controls .mejs-captions-button {
+  margin: 0 7px;
+}
+/* line 94, ../scss/main.scss */
+.mejs-scott .mejs-controls .mejs-button button {
+  outline: none;
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  text-decoration: none;
+  margin: 7px 5px;
+  padding: 0;
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  border: 0;
+  background: transparent url(../mejs/controls.svg) no-repeat;
+}
+/* line 116, ../scss/main.scss */
+.mejs-scott .mejs-overlay-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  margin: -50px 0 0 -50px;
+  background: url(../mejs/bigplay.svg) no-repeat;
+}
+/* line 126, ../scss/main.scss */
+.mejs-scott .mejs-container .mejs-controls .mejs-time-rail .mejs-time-total .mejs-time-float {
+  border: none;
+  background: none;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8);
+  font-family: Helvetica, Arial;
+  font-size: 13px;
+  color: #FFF;
+}
+
+/* line 138, ../scss/main.scss */
+.mejs-container {
+  position: relative;
+  background: url(../img/projection-screen.jpg) no-repeat;
+  font-family: Helvetica,Arial;
+  text-align: left;
+  vertical-align: top;
+  text-indent: 0;
+  background-size: cover;
+}
+
+/* Animations on Show/Hide. Pick your own */
+/* http://daneden.github.io/animate.css/ */
+/* line 153, ../scss/main.scss */
+audio, video {
+  -webkit-animation: rubberBand .5s;
+  animation: rubberBand .5s;
+}
+
+@-webkit-keyframes rubberBand {
+  /* line 160, ../scss/main.scss */
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  /* line 165, ../scss/main.scss */
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  /* line 170, ../scss/main.scss */
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  /* line 175, ../scss/main.scss */
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  /* line 180, ../scss/main.scss */
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  /* line 185, ../scss/main.scss */
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  /* line 190, ../scss/main.scss */
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes rubberBand {
+  /* line 197, ../scss/main.scss */
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  /* line 202, ../scss/main.scss */
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  /* line 207, ../scss/main.scss */
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  /* line 212, ../scss/main.scss */
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  /* line 217, ../scss/main.scss */
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  /* line 222, ../scss/main.scss */
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  /* line 227, ../scss/main.scss */
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
 }
