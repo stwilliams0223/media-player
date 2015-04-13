@@ -6,21 +6,18 @@
 }
 
 html{
-background: white no-repeat center center fixed; 
-
+background: url(http://i.stack.imgur.com/PEnJm.png), radial-gradient(#22313F,#111); 
+   background-blend-mode: multiply;
 
 }
 
 body
 {  
-  background: 
-    url(http://i.stack.imgur.com/PEnJm.png), 
-    radial-gradient(#22313F,#111); 
-   background-blend-mode: multiply;
+background: white no-repeat center center fixed;   
 }
 
 video{
-
+width: 100%;
 border-radius:10px;
 
 }
@@ -29,10 +26,17 @@ audio{
 
 
 }
+
+h1{
+
+color: gold;
+font-family: 'Sarina', cursive;
+
+}
 .wrapper{
 
 	width: 50%;
-    margin: 0 auto;
+  margin: 0 auto;
   
 
 
@@ -46,7 +50,7 @@ audio{
 
   .mejs-controls{
 
-	background: white;
+	background: black;
   	height: 30px;
 
   	.mejs-time-rail{
@@ -64,7 +68,7 @@ audio{
 
   		.mejs-time-total, .mejs-time-buffering, .mejs-time-handle{
 
-  			background: black;
+  			background: rgb(0, 168, 255);
   			margin-top: 8px;
   			height: 50%;
  			border-radius: 0;
@@ -78,7 +82,7 @@ audio{
 
   		.mejs-time-current{
 
-  			background: rgb(0, 168, 255);
+  			background: gold;
         color:black;
   		}
 
@@ -263,9 +267,7 @@ audio, video {
   }
 }
 
-body{
-  font-family:verdana, arial;
-}    
+  
 .mejs-list li:hover {
         background: #ffa;
         cursor: pointer;
@@ -279,19 +281,15 @@ body{
 }
 
 #wrapper{
-  width:100%;
+  width:450px;
   margin-left:auto;
   margin-right:auto;
-  margin-top:50px;
   padding:15px;
   background: white;
   border-radius:10px;
 font-family: 'Orbitron', sans-serif;
 color:rgb(0, 168, 255);
 
-  
-  -webkit-box-shadow: 0px 1px 71px 15px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 1px 71px 15px rgba(0,0,0,0.75);
 
 }
 
@@ -299,3 +297,22 @@ ul {
     list-style-type: none;
 
   }
+
+  #container {
+    width:1100px;
+    margin:20px auto;
+}
+
+#content {
+    float:left;
+    width:450px;
+}
+
+#sidebar {
+    float:left;
+    width:620px;
+}
+
+#footer {
+    clear:both;
+}

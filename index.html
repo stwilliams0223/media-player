@@ -9,6 +9,7 @@
     <script src="js/mediaelement-and-player.min.js"></script>
 
    <link href='http://fonts.googleapis.com/css?family=Orbitron:700' rel='stylesheet' type='text/css'>
+   <link href='http://fonts.googleapis.com/css?family=Sarina' rel='stylesheet' type='text/css'>
 
 
     <link rel="stylesheet" href="js/mediaelementplayer.min.css" />
@@ -17,39 +18,13 @@
   </head>
   <body>
 
+<div id="container">
+  
+        <div id="content">
+       
+       <h1>Scott's Media Player</h1>
 
-    
-    <div class="wrapper">
-
-
-
-    <!--   <nav>
-        <ul>
-          <li><a href="#" id="video-filter">Video</a></li>
-          <li><a href="#" id="audio-filter">Audio</a></li>
-        </ul>
-      </nav> -->
-
-
- <video class="mejs-scott" width="852" height="480">
-        <source src="https://dl-web.dropbox.com/get/_cdn/Drawing%20a%203D%20Rattlesnake%20-%20Cool%20Anamorphic%20Trick%20Art%20Optical%20Illusion.mp4?_subject_uid=288210045&w=AADg95It06v6ZirEberK37GJyhYXAXK1rs0pDgPDt6c95A" type="video/mp4">
-        <track label="English" kind="subtitles" srclang="en" src="captions.vtt" default>
-      </video>
-
-
-<br>
-
-      <!-- Video -->
-      
-
-      <video class="mejs-scott" width="852" height="480" controls>
-        <source src="https://dl-web.dropbox.com/get/_cdn/Drawing%20a%20Hole%2C%20Anamorphic%20Illusion%2C%20Trompe-l%27oeil.mp4?_subject_uid=288210045&w=AAAupemGfZK5f4n7HqkS-RvO7i47ciD7vtKpxIhIBSlN3A" type="video/mp4">
-        <track label="English" kind="subtitles" srclang="en" src="captions.vtt" default>
-      </video>
-
-      <br>
-      
-      <!-- Audio -->
+   <!-- Audio -->
       <div id="wrapper">
 <audio id="mejs" class="mejs-scott" src="../media/audio-01.mp3" type="audio/mp3" controls="controls"></audio>
 <ul class="mejs-list">
@@ -61,8 +36,42 @@
 </ul>
 </div>
 
+<br>
+
+    </div>
+    
+    <div id="sidebar">
+        
+    
+    
+    <div class="wrapper">
+
+      <!-- Video -->
+ <video class="mejs-scott" width="852" height="480" controls="controls">
+        <source src="https://dl-web.dropbox.com/get/_cdn/Drawing%20a%203D%20Rattlesnake%20-%20Cool%20Anamorphic%20Trick%20Art%20Optical%20Illusion.mp4?_subject_uid=288210045&w=AADg95It06v6ZirEberK37GJyhYXAXK1rs0pDgPDt6c95A" type="video/mp4">
+        <track label="English" kind="subtitles" srclang="en" src="captions.vtt" default>
+      </video>
 
 
+<br>
+
+
+      
+
+      <video class="mejs-scott" width="852" height="480" controls="controls">
+        <source src="https://dl-web.dropbox.com/get/_cdn/Drawing%20a%20Hole%2C%20Anamorphic%20Illusion%2C%20Trompe-l%27oeil.mp4?_subject_uid=288210045&w=AAAupemGfZK5f4n7HqkS-RvO7i47ciD7vtKpxIhIBSlN3A" type="video/mp4">
+        <track label="English" kind="subtitles" srclang="en" src="captions.vtt" default>
+      </video>
+
+      <br>
+</div>
+    
+    <div id="footer">
+        
+    </div>
+</div>
+
+</div>
 <!--      <audio class="mejs-scott" controls>
         <source src="../media/audio-01.mp3" type="audio/mp3">
       </audio>
