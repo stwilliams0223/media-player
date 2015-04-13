@@ -6,7 +6,7 @@
 }
 
 html{
-background: url(http://i.stack.imgur.com/PEnJm.png), radial-gradient(#22313F,#111); 
+background: url(http://i.stack.imgur.com/PEnJm.png), radial-gradient(#333,#111); 
    background-blend-mode: multiply;
 
 }
@@ -68,7 +68,7 @@ font-family: 'Sarina', cursive;
 
   		.mejs-time-total, .mejs-time-buffering, .mejs-time-handle{
 
-  			background: rgb(0, 168, 255);
+  			background: #c2d1d8;
   			margin-top: 8px;
   			height: 50%;
  			border-radius: 0;
@@ -90,7 +90,7 @@ font-family: 'Sarina', cursive;
 
   	.mejs-captions-selector{
 
-  			background: rgba(56,64,71,0.98);
+  			background: black;
 		  width: 100px;
 		  right: auto;
   	}
@@ -288,7 +288,7 @@ audio, video {
   background: white;
   border-radius:10px;
 font-family: 'Orbitron', sans-serif;
-color:rgb(0, 168, 255);
+color:black;
 
 
 }
