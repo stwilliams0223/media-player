@@ -27,11 +27,6 @@ audio{
     margin: 0 auto;
     margin-top: 5%;
 
-	.mejs-treehouse{
-
-		margin-top: 20px;
-
-	}
 
 
 }
@@ -43,7 +38,7 @@ audio{
 
   .mejs-controls{
 
-	background: rgba(56,64,71,0.98);
+	background: white;
   	height: 30px;
 
   	.mejs-time-rail{
@@ -107,6 +102,15 @@ audio{
 				  background: transparent url(../mejs/controls.svg) no-repeat;
 
   			}
+        .mejs-volume-button {
+
+          button{
+            background: transparent url(../img/Volume-icon.png)
+
+          }
+
+        
+        }
 
   		}
 
@@ -139,7 +143,7 @@ audio{
 
 
   position: relative;
-  background: url(../img/projection-screen.jpg) no-repeat;
+  background: none;
   font-family: Helvetica,Arial;
   text-align: left;
   vertical-align: top;
