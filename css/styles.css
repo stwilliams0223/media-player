@@ -31,7 +31,7 @@ video, audio, .mejs-colin {
   display: block;
 }
 
-.mejs-scott .mejs-controls {
+.mejs-colin .mejs-controls {
   background: rgba(56,64,71,0.98);
   height: 30px;
 }
