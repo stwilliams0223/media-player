@@ -11,6 +11,14 @@ background: white no-repeat center center fixed;
 
 }
 
+body
+{  
+  background: 
+    url(http://i.stack.imgur.com/PEnJm.png), 
+    radial-gradient(#22313F,#111); 
+   background-blend-mode: multiply;
+}
+
 video{
 
 border-radius:10px;
@@ -25,7 +33,7 @@ audio{
 
 	width: 50%;
     margin: 0 auto;
-    margin-top: 5%;
+  
 
 
 
@@ -54,19 +62,24 @@ audio{
 
   		padding: 0;
 
-  		.mejs-time-total, .mejs-time-loaded, .mejs-time-buffering, .mejs-time-handle{
+  		.mejs-time-total, .mejs-time-buffering, .mejs-time-handle{
 
-  			background: #2d3339;
+  			background: black;
   			margin-top: 8px;
   			height: 50%;
  			border-radius: 0;
 
-
   		}
+
+      .mejs-time-loaded{
+
+        background: rgb(47, 47, 47);
+      }
 
   		.mejs-time-current{
 
-  			background: #ff9900;
+  			background: rgb(0, 168, 255);
+        color:black;
   		}
 
   	}
@@ -133,7 +146,7 @@ audio{
   text-shadow: 0px 1px 2px rgba(0,0,0,0.8);
   font-family: Helvetica, Arial;
   font-size: 13px;
-  color: #FFF;
+  color: black;
 }
 
 
@@ -150,7 +163,23 @@ audio{
   text-indent: 0;
   background-size:cover;
 
+  .mejs-controls .mejs-time span{
+
+  color: black;
+  font-size: 11px;
+  line-height: 12px;
+  display: block;
+  float: left;
+  margin: 1px 2px 0 0;
+  width: auto;
+  }
+
 }
+
+
+
+
+
 /* Animations on Show/Hide. Pick your own */
 /* http://daneden.github.io/animate.css/ */
 
@@ -233,3 +262,40 @@ audio, video {
     transform: scale3d(1, 1, 1);
   }
 }
+
+body{
+  font-family:verdana, arial;
+}    
+.mejs-list li:hover {
+        background: #ffa;
+        cursor: pointer;
+    }
+    .mejs-list li.current {
+        background: #cddfff;
+    }
+.mejs-container{
+  margin-left:auto;
+  margin-right:auto;
+}
+
+#wrapper{
+  width:100%;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:50px;
+  padding:15px;
+  background: white;
+  border-radius:10px;
+font-family: 'Orbitron', sans-serif;
+color:rgb(0, 168, 255);
+
+  
+  -webkit-box-shadow: 0px 1px 71px 15px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 1px 71px 15px rgba(0,0,0,0.75);
+
+}
+
+ul {
+    list-style-type: none;
+
+  }

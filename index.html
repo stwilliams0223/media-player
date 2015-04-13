@@ -8,15 +8,21 @@
     <script src="js/jquery.js"></script>
     <script src="js/mediaelement-and-player.min.js"></script>
 
+   <link href='http://fonts.googleapis.com/css?family=Orbitron:700' rel='stylesheet' type='text/css'>
+
 
     <link rel="stylesheet" href="js/mediaelementplayer.min.css" />
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
+
+
     
     <div class="wrapper">
-      
+
+
+
     <!--   <nav>
         <ul>
           <li><a href="#" id="video-filter">Video</a></li>
@@ -29,7 +35,7 @@
         <source src="https://dl-web.dropbox.com/get/_cdn/Drawing%20a%203D%20Rattlesnake%20-%20Cool%20Anamorphic%20Trick%20Art%20Optical%20Illusion.mp4?_subject_uid=288210045&w=AADg95It06v6ZirEberK37GJyhYXAXK1rs0pDgPDt6c95A" type="video/mp4">
         <track label="English" kind="subtitles" srclang="en" src="captions.vtt" default>
       </video>
-</div> 
+
 
 <br>
 
@@ -40,18 +46,34 @@
         <source src="https://dl-web.dropbox.com/get/_cdn/Drawing%20a%20Hole%2C%20Anamorphic%20Illusion%2C%20Trompe-l%27oeil.mp4?_subject_uid=288210045&w=AAAupemGfZK5f4n7HqkS-RvO7i47ciD7vtKpxIhIBSlN3A" type="video/mp4">
         <track label="English" kind="subtitles" srclang="en" src="captions.vtt" default>
       </video>
+
+      <br>
       
       <!-- Audio -->
-      <audio class="mejs-scott" controls>
-        <source src="media/1.mp3" type="audio/mp3">
+      <div id="wrapper">
+<audio id="mejs" class="mejs-scott" src="../media/audio-01.mp3" type="audio/mp3" controls="controls"></audio>
+<ul class="mejs-list">
+        <li  class="current"  data-url="https://dl-web.dropbox.com/get/_cdn/ed-sheeran-don-t.mp3?_subject_uid=288210045&w=AAAKas6FvdPidVA-fZ7SauADLkoToOYa_UqPlw6uf8jyCg">Ed Sheeran - Don't</li>
+    <li data-url="https://dl-web.dropbox.com/get/_cdn/coldplay-a-sky-full-of-stars.mp3?_subject_uid=288210045&w=AADL0MSbFKSITTn6CNjDMBWovmj8f3YLQYbyMl6vbtNX4Q">Coldplay - A Sky Full Of Stars</li>
+
+      <li data-url="https://dl-web.dropbox.com/get/_cdn/fall-out-boy-centuries.mp3?_subject_uid=288210045&w=AADfPhVnqjwv5bD4DdODNk7v1Y5NxeTmY3bDwor3uhnxPw">Fall Out Boy - Centuries</li>
+   
+</ul>
+</div>
+
+
+
+<!--      <audio class="mejs-scott" controls>
+        <source src="../media/audio-01.mp3" type="audio/mp3">
       </audio>
+      <br>
       <audio class="mejs-scott" controls>
         <source src="media/2.mp3" type="audio/mp3">
       </audio>
       
-    </div>
+    </div> -->
     
-
+        <script src="mediaelement-and-player.min.js"></script>
         <script src="js/scripts.js"></script>
   </body>
 </html>

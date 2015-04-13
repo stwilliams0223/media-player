@@ -11,54 +11,64 @@ html {
   background: white no-repeat center center fixed;
 }
 
-/* line 14, ../scss/main.scss */
+/* line 15, ../scss/main.scss */
+body {
+  background: url(http://i.stack.imgur.com/PEnJm.png), radial-gradient(#22313f, #111111);
+  background-blend-mode: multiply;
+}
+
+/* line 22, ../scss/main.scss */
 video {
   border-radius: 10px;
 }
 
-/* line 24, ../scss/main.scss */
+/* line 32, ../scss/main.scss */
 .wrapper {
   width: 50%;
   margin: 0 auto;
-  margin-top: 5%;
 }
 
-/* line 39, ../scss/main.scss */
+/* line 47, ../scss/main.scss */
 .mejs-scott .mejs-controls {
   background: white;
   height: 30px;
 }
-/* line 46, ../scss/main.scss */
+/* line 54, ../scss/main.scss */
 .mejs-scott .mejs-controls .mejs-time-rail span {
   height: 100%;
   border-radius: 0px;
 }
-/* line 53, ../scss/main.scss */
+/* line 61, ../scss/main.scss */
 .mejs-scott .mejs-controls .mejs-time-rail {
   padding: 0;
 }
-/* line 57, ../scss/main.scss */
-.mejs-scott .mejs-controls .mejs-time-rail .mejs-time-total, .mejs-scott .mejs-controls .mejs-time-rail .mejs-time-loaded, .mejs-scott .mejs-controls .mejs-time-rail .mejs-time-buffering, .mejs-scott .mejs-controls .mejs-time-rail .mejs-time-handle {
-  background: #2d3339;
+/* line 65, ../scss/main.scss */
+.mejs-scott .mejs-controls .mejs-time-rail .mejs-time-total, .mejs-scott .mejs-controls .mejs-time-rail .mejs-time-buffering, .mejs-scott .mejs-controls .mejs-time-rail .mejs-time-handle {
+  background: black;
   margin-top: 8px;
   height: 50%;
   border-radius: 0;
 }
-/* line 67, ../scss/main.scss */
-.mejs-scott .mejs-controls .mejs-time-rail .mejs-time-current {
-  background: #ff9900;
-}
 /* line 74, ../scss/main.scss */
+.mejs-scott .mejs-controls .mejs-time-rail .mejs-time-loaded {
+  background: #2f2f2f;
+}
+/* line 79, ../scss/main.scss */
+.mejs-scott .mejs-controls .mejs-time-rail .mejs-time-current {
+  background: #00a8ff;
+  color: black;
+}
+/* line 87, ../scss/main.scss */
 .mejs-scott .mejs-controls .mejs-captions-selector {
   background: rgba(56, 64, 71, 0.98);
   width: 100px;
   right: auto;
 }
-/* line 82, ../scss/main.scss */
+/* line 95, ../scss/main.scss */
 .mejs-scott .mejs-controls .mejs-captions-button {
   margin: 0 7px;
 }
-/* line 89, ../scss/main.scss */
+/* line 102, ../scss/main.scss */
 .mejs-scott .mejs-controls .mejs-button button {
   outline: none;
   display: block;
@@ -73,11 +83,11 @@ video {
   border: 0;
   background: transparent url(../mejs/controls.svg) no-repeat;
 }
-/* line 107, ../scss/main.scss */
+/* line 120, ../scss/main.scss */
 .mejs-scott .mejs-controls .mejs-button .mejs-volume-button button {
   background: transparent url(../img/Volume-icon.png);
 }
-/* line 120, ../scss/main.scss */
+/* line 133, ../scss/main.scss */
 .mejs-scott .mejs-overlay-button {
   position: absolute;
   top: 50%;
@@ -87,17 +97,17 @@ video {
   margin: -50px 0 0 -50px;
   background: url(../mejs/bigplay.svg) no-repeat;
 }
-/* line 130, ../scss/main.scss */
+/* line 143, ../scss/main.scss */
 .mejs-scott .mejs-container .mejs-controls .mejs-time-rail .mejs-time-total .mejs-time-float {
   border: none;
   background: none;
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.8);
   font-family: Helvetica, Arial;
   font-size: 13px;
-  color: #FFF;
+  color: black;
 }
 
-/* line 142, ../scss/main.scss */
+/* line 155, ../scss/main.scss */
 .mejs-container {
   position: relative;
   background: none;
@@ -107,53 +117,63 @@ video {
   text-indent: 0;
   background-size: cover;
 }
+/* line 166, ../scss/main.scss */
+.mejs-container .mejs-controls .mejs-time span {
+  color: black;
+  font-size: 11px;
+  line-height: 12px;
+  display: block;
+  float: left;
+  margin: 1px 2px 0 0;
+  width: auto;
+}
 
 /* Animations on Show/Hide. Pick your own */
 /* http://daneden.github.io/animate.css/ */
-/* line 157, ../scss/main.scss */
+/* line 186, ../scss/main.scss */
 audio, video {
   -webkit-animation: rubberBand .5s;
   animation: rubberBand .5s;
 }
 
 @-webkit-keyframes rubberBand {
-  /* line 164, ../scss/main.scss */
+  /* line 193, ../scss/main.scss */
   0% {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
   }
 
-  /* line 169, ../scss/main.scss */
+  /* line 198, ../scss/main.scss */
   30% {
     -webkit-transform: scale3d(1.25, 0.75, 1);
     transform: scale3d(1.25, 0.75, 1);
   }
 
-  /* line 174, ../scss/main.scss */
+  /* line 203, ../scss/main.scss */
   40% {
     -webkit-transform: scale3d(0.75, 1.25, 1);
     transform: scale3d(0.75, 1.25, 1);
   }
 
-  /* line 179, ../scss/main.scss */
+  /* line 208, ../scss/main.scss */
   50% {
     -webkit-transform: scale3d(1.15, 0.85, 1);
     transform: scale3d(1.15, 0.85, 1);
   }
 
-  /* line 184, ../scss/main.scss */
+  /* line 213, ../scss/main.scss */
   65% {
     -webkit-transform: scale3d(0.95, 1.05, 1);
     transform: scale3d(0.95, 1.05, 1);
   }
 
-  /* line 189, ../scss/main.scss */
+  /* line 218, ../scss/main.scss */
   75% {
     -webkit-transform: scale3d(1.05, 0.95, 1);
     transform: scale3d(1.05, 0.95, 1);
   }
 
-  /* line 194, ../scss/main.scss */
+  /* line 223, ../scss/main.scss */
   100% {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
@@ -161,45 +181,87 @@ audio, video {
 }
 
 @keyframes rubberBand {
-  /* line 201, ../scss/main.scss */
+  /* line 230, ../scss/main.scss */
   0% {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
   }
 
-  /* line 206, ../scss/main.scss */
+  /* line 235, ../scss/main.scss */
   30% {
     -webkit-transform: scale3d(1.25, 0.75, 1);
     transform: scale3d(1.25, 0.75, 1);
   }
 
-  /* line 211, ../scss/main.scss */
+  /* line 240, ../scss/main.scss */
   40% {
     -webkit-transform: scale3d(0.75, 1.25, 1);
     transform: scale3d(0.75, 1.25, 1);
   }
 
-  /* line 216, ../scss/main.scss */
+  /* line 245, ../scss/main.scss */
   50% {
     -webkit-transform: scale3d(1.15, 0.85, 1);
     transform: scale3d(1.15, 0.85, 1);
   }
 
-  /* line 221, ../scss/main.scss */
+  /* line 250, ../scss/main.scss */
   65% {
     -webkit-transform: scale3d(0.95, 1.05, 1);
     transform: scale3d(0.95, 1.05, 1);
   }
 
-  /* line 226, ../scss/main.scss */
+  /* line 255, ../scss/main.scss */
   75% {
     -webkit-transform: scale3d(1.05, 0.95, 1);
     transform: scale3d(1.05, 0.95, 1);
   }
 
-  /* line 231, ../scss/main.scss */
+  /* line 260, ../scss/main.scss */
   100% {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
   }
+}
+
+/* line 266, ../scss/main.scss */
+body {
+  font-family: verdana, arial;
+}
+
+/* line 269, ../scss/main.scss */
+.mejs-list li:hover {
+  background: #ffa;
+  cursor: pointer;
+}
+
+/* line 273, ../scss/main.scss */
+.mejs-list li.current {
+  background: #cddfff;
+}
+
+/* line 276, ../scss/main.scss */
+.mejs-container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 281, ../scss/main.scss */
+#wrapper {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  padding: 15px;
+  background: white;
+  border-radius: 10px;
+  font-family: 'Orbitron', sans-serif;
+  color: #00a8ff;
+  -webkit-box-shadow: 0px 1px 71px 15px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 71px 15px rgba(0, 0, 0, 0.75);
+}
+
+/* line 298, ../scss/main.scss */
+ul {
+  list-style-type: none;
 }
